@@ -28,3 +28,15 @@ jupyter notebook
 A browser tab will open from where you can select the demo notebook to run.
 
 ![](./assets/jupyter-homepage.png)
+
+#### Demo 1 - Configuration validation with Batfish.ipynb
+
+Introduction to the basics of Batfish and how to evaluate Batfish policies.
+
+#### Demo 2 - Analyze a routing policy change with Batfish.ipynb
+
+Comparing routing policy differences between two snapshots
+
+#### Demo 3 - Prevent route-leak with Batfish.ipynb
+
+Evaluating a chance to routing policy to ensure it doesn't result in a route-leak
