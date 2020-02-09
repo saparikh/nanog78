@@ -15,7 +15,7 @@ python3 -m pip install --upgrade git+https://github.com/batfish/pybatfish.git
 
 ### Presentation
 
-The slides from my presentation can be found [here].(https://github.com/saparikh/nanog78/blob/master/presentation/nanog78-presentation.pptx?raw=true)
+The slides from my presentation can be found [here](https://github.com/saparikh/nanog78/blob/master/presentation/nanog78-presentation.pptx?raw=true).
 
 ### Demonstrations
 
