@@ -27,5 +27,5 @@ jupyter notebook
 
 A browser tab will open from where you can select the demo notebook to run.
 
-(./assets/jupyter-homepage.png)
+(https://github.com/saparikh/nanog78/blob/master/assets/jupyter-homepage.png)
 
