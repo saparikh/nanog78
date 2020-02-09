@@ -1,0 +1,4384 @@
+{
+  "Announcements": [
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 17,
+      "med": 16,
+      "network": "11.0.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 99,
+      "med": 5,
+      "network": "11.1.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 2,
+      "med": 24,
+      "network": "11.2.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 14,
+      "med": 21,
+      "network": "11.3.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 69,
+      "med": 35,
+      "network": "11.4.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 74,
+      "med": 13,
+      "network": "11.5.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 69,
+      "med": 20,
+      "network": "11.6.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 34,
+      "med": 50,
+      "network": "11.7.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 49,
+      "med": 12,
+      "network": "11.8.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 18,
+      "med": 36,
+      "network": "11.9.0.0/16",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 10,
+      "med": 42,
+      "network": "2.0.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 57,
+      "med": 0,
+      "network": "2.32.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 21,
+      "med": 16,
+      "network": "2.64.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 8,
+      "med": 39,
+      "network": "2.96.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 84,
+      "med": 45,
+      "network": "2.128.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 31,
+      "med": 47,
+      "network": "2.160.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 47,
+      "med": 32,
+      "network": "2.192.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 45,
+      "med": 43,
+      "network": "2.224.0.0/11",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 53,
+      "med": 14,
+      "network": "25.0.0.0/26",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 92,
+      "med": 25,
+      "network": "128.0.0.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 5,
+      "med": 29,
+      "network": "128.0.8.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 16,
+      "med": 6,
+      "network": "128.0.16.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 75,
+      "med": 45,
+      "network": "128.0.24.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 96,
+      "med": 36,
+      "network": "128.0.32.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 8,
+      "med": 35,
+      "network": "128.0.40.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 98,
+      "med": 37,
+      "network": "128.0.48.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 22,
+      "med": 37,
+      "network": "128.0.56.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 15,
+      "med": 4,
+      "network": "128.0.64.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 35,
+      "med": 39,
+      "network": "128.0.72.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 49,
+      "med": 32,
+      "network": "128.0.80.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 40,
+      "med": 4,
+      "network": "128.0.88.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 63,
+      "med": 2,
+      "network": "128.0.96.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 63,
+      "med": 22,
+      "network": "128.0.104.0/21",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 33,
+      "med": 18,
+      "network": "4.0.0.0/10",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 8,
+      "med": 22,
+      "network": "4.64.0.0/10",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 41,
+      "med": 50,
+      "network": "4.128.0.0/10",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 46,
+      "med": 1,
+      "network": "4.192.0.0/10",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 50,
+      "med": 7,
+      "network": "9.0.0.0/18",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 50,
+      "med": 1,
+      "network": "9.0.64.0/18",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 10,
+      "med": 22,
+      "network": "9.0.128.0/18",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 82,
+      "med": 2,
+      "network": "9.0.192.0/18",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 98,
+      "med": 22,
+      "network": "9.1.0.0/18",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 73,
+      "med": 21,
+      "network": "9.1.64.0/18",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 57,
+      "med": 42,
+      "network": "9.1.128.0/18",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 11,
+      "med": 37,
+      "network": "145.0.0.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 81,
+      "med": 27,
+      "network": "145.0.16.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 63,
+      "med": 48,
+      "network": "145.0.32.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 85,
+      "med": 9,
+      "network": "145.0.48.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 80,
+      "med": 8,
+      "network": "145.0.64.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 66,
+      "med": 37,
+      "network": "145.0.80.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 85,
+      "med": 5,
+      "network": "145.0.96.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 88,
+      "med": 10,
+      "network": "145.0.112.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 62,
+      "med": 4,
+      "network": "145.0.128.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 5,
+      "med": 22,
+      "network": "145.0.144.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 36,
+      "med": 0,
+      "network": "145.0.160.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 42,
+      "med": 29,
+      "network": "145.0.176.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 8,
+      "med": 18,
+      "network": "145.0.192.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 13,
+      "med": 39,
+      "network": "145.0.208.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 25,
+      "med": 18,
+      "network": "145.0.224.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    },
+    {
+      "type": "ebgp_sent",
+      "srcProtocol": "AGGREGATE",
+      "originType": "egp",
+      "originatorIp": "0.0.0.0",
+      "srcVrf": "default",
+      "dstVrf": "default",
+      "clusterList": [],
+      "communities": [
+        "609:60001"
+      ],
+      "asPath": [
+        [
+          609
+        ],
+        [
+          504
+        ],
+        [
+          2174
+        ],
+        [
+          10283
+        ],
+        [
+          14561
+        ],
+        [
+          8951
+        ],
+        [
+          14693
+        ],
+        [
+          2710
+        ],
+        [
+          13204
+        ],
+        [
+          12877
+        ],
+        [
+          10822
+        ],
+        [
+          12109
+        ],
+        [
+          6405
+        ],
+        [
+          9312
+        ],
+        [
+          7916
+        ],
+        [
+          8934
+        ],
+        [
+          14180
+        ]
+      ],
+      "localPreference": 33,
+      "med": 29,
+      "network": "145.0.240.0/20",
+      "nextHopIp": "9.1.1.1",
+      "srcNode": "cust01",
+      "dstNode": "pe1",
+      "srcIp": "9.1.1.1",
+      "dstIp": "9.1.1.0"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+- Node: pe1
+  Remote_AS: '609'
+  Remote_IP: 9.1.1.1
+  Allowed_Prefixes:
+  Origin_Prefixes:
+  - 15.0.0.0/22
+- Node: pe2
+  Remote_AS: '608'
+  Remote_IP: 8.1.1.1
+  Allowed_Prefixes:
+  Origin_Prefixes:
+  - 5.1.0.0/18

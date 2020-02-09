@@ -1,0 +1,8 @@
+pytest
+pytest-html
+pandas
+pybatfish
+netaddr
+PyYAML
+jupyter
+attrdict

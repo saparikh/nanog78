@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+function show_all_extras() {
+    find_all('.col-result').forEach(show_extras);
+}
+
+function hide_all_extras() {
+    find_all('.col-result').forEach(hide_extras);
+}
+
+function show_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove("collapsed");
+    expandcollapse.classList.remove("expander");
+    expandcollapse.classList.add("collapser");
+}
+
+function hide_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add("collapsed");
+    expandcollapse.classList.remove("collapser");
+    expandcollapse.classList.add("expander");
+}
+
+function show_filters() {
+    var filter_items = document.getElementsByClassName('filter');
+    for (var i = 0; i < filter_items.length; i++)
+        filter_items[i].hidden = false;
+}
+
+function add_collapse() {
+    // Add links for show/hide all
+    var resulttable = find('table#results-table');
+    var showhideall = document.createElement("p");
+    showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
+                            '<a href="javascript:hide_all_extras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    find_all('.col-result').forEach(function(elem) {
+        var collapsed = get_query_parameter('collapsed') || 'Passed';
+        var extras = elem.parentNode.nextElementSibling;
+        var expandcollapse = document.createElement("span");
+        if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add("collapsed");
+            expandcollapse.classList.add("expander");
+        } else {
+            expandcollapse.classList.add("collapser");
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener("click", function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+                show_extras(event.currentTarget);
+            } else {
+                hide_extras(event.currentTarget);
+            }
+        });
+    })
+}
+
+function get_query_parameter(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () {
+    reset_sort_headers();
+
+    add_collapse();
+
+    show_filters();
+
+    sort_column(find('.initial-sort'));
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+};
+
+function sort_table(clicked, key_func) {
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+    var sorted_rows = sort(rows, key_func, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    var thead = document.getElementById("results-table-head");
+    document.getElementById('results-table').remove();
+    var parent = document.createElement("table");
+    parent.id = "results-table";
+    parent.appendChild(thead);
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName("BODY")[0].appendChild(parent);
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+
+        if (key_a == key_b) return 0;
+
+        if (reversed) {
+            return (key_a < key_b ? 1 : -1);
+        } else {
+            return (key_a > key_b ? 1 : -1);
+        }
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+                       'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function is_all_rows_hidden(value) {
+  return value.hidden == false;
+}
+
+function filter_table(elem) {
+    var outcome_att = "data-test-result";
+    var outcome = elem.getAttribute(outcome_att);
+    class_outcome = outcome + " results-table-row";
+    var outcome_rows = document.getElementsByClassName(class_outcome);
+
+    for(var i = 0; i < outcome_rows.length; i++){
+        outcome_rows[i].hidden = !elem.checked;
+    }
+
+    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    var all_rows_hidden = rows.length == 0 ? true : false;
+    var not_found_message = document.getElementById("not-found-message");
+    not_found_message.hidden = !all_rows_hidden;
+}
+</script>
+    <h1>manrs_report.html</h1>
+    <p>Report generated on 08-Feb-2020 at 20:56:11 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>Packages</td>
+        <td>{&apos;pytest&apos;: &apos;5.3.1&apos;, &apos;py&apos;: &apos;1.8.0&apos;, &apos;pluggy&apos;: &apos;0.13.1&apos;}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Darwin-18.7.0-x86_64-i386-64bit</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{&apos;html&apos;: &apos;2.0.1&apos;, &apos;requests-mock&apos;: &apos;1.7.0&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;, &apos;cov&apos;: &apos;2.8.1&apos;}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.7.5</td></tr></table>
+    <h2>Summary</h2>
+    <p>15 tests ran in 18.66 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">10 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_audit.py::test_no_undefined_refs</td>
+          <td class="col-duration">0.49</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   pybatfish.exception.BatfishAssertException: Found undefined reference(s), when none were expected</span><br/>             File_Name Struct_Type       Ref_Name                 Context                 Lines<br/>    0  configs/pe2.cfg  route-map   customer2-out  bgp outbound route-map  configs/pe2.cfg:[31]<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_audit.py::test_proxy_arp</td>
+          <td class="col-duration">0.27</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: Found interfaces with incorrect proxy ARP setting</span><br/>               Interface Proxy_ARP<br/>    0  pe2[Ethernet2]     True    <br/>    1  cust01[Ethernet1]  True    <br/>    2  pe1[Ethernet2]     True    <br/>    3  pe2[Ethernet1]     True    <br/>    4  cust02[Ethernet1]  True    <br/>    5  pe1[Ethernet1]     True    <br/>    6  pe1[Loopback0]     True    <br/>    7  pe2[Loopback0]     True<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_customer_bgp_session_input_policy</td>
+          <td class="col-duration">0.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: Customer BGP sessions without input route policy</span><br/>    [&#x27;pe2:8.1.1.1&#x27;]<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_customer_bgp_session_aspath_filter</td>
+          <td class="col-duration">2.06</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: List of customer BGP sessions with import policies missing AS PATH filters</span><br/>    <br/>      Node Local_IP  Local_AS Remote_IP Remote_AS Import_Policy<br/>    0  pe2  8.1.1.0  60001     8.1.1.1   608       []<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_customer_bgp_session_pfx_filter</td>
+          <td class="col-duration">1.28</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: List of customer BGP sessions with import policies missing prefix-list filters</span><br/>    <br/>      Node Local_IP  Local_AS Remote_IP Remote_AS Import_Policy<br/>    0  pe2  8.1.1.0  60001     8.1.1.1   608       []<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_customer_routes_prefix_length</td>
+          <td class="col-duration">0.45</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: List of customer routes with prefix length &gt; /24</span><br/>    [&#x27;Prefix 25.0.0.0/26 from 9.1.1.1 on pe1&#x27;]<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_advertise_long_prefix_length</td>
+          <td class="col-duration">1.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: List of peers with BGP routes with prefix length &gt; /24</span><br/>    <br/>    [&#x27;Prefix 25.0.0.0/26 sent to cust02:8.1.1.1 from pe2&#x27;]<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_customer_routes_valid</td>
+          <td class="col-duration">0.40</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: List of offending routes outside of agreed upon prefix range</span><br/>    <br/>    [&#x27;4.0.0.0/10 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.208.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.48.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;25.0.0.0/26 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.112.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.0.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.104.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;2.192.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.240.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.32.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.8.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.224.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;9.1.0.0/18 on pe1 from 9.1.1.1&#x27;, &#x27;11.9.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.16.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;11.4.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.32.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;2.96.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.64.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;11.8.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.96.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;2.224.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.80.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.48.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;11.3.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;11.2.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.56.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;11.6.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.192.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.16.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.64.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;4.192.0.0/10 on pe1 from 9.1.1.1&#x27;, &#x27;9.0.192.0/18 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.176.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.40.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.96.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;9.1.128.0/18 on pe1 from 9.1.1.1&#x27;, &#x27;9.0.128.0/18 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.0.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.128.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.160.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;2.0.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;11.0.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;2.32.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;11.7.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.80.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;11.1.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;11.5.0.0/16 on pe1 from 9.1.1.1&#x27;, &#x27;145.0.144.0/20 on pe1 from 9.1.1.1&#x27;, &#x27;4.64.0.0/10 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.24.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;9.0.64.0/18 on pe1 from 9.1.1.1&#x27;, &#x27;9.0.0.0/18 on pe1 from 9.1.1.1&#x27;, &#x27;2.160.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;9.1.64.0/18 on pe1 from 9.1.1.1&#x27;, &#x27;2.128.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.88.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;128.0.72.0/21 on pe1 from 9.1.1.1&#x27;, &#x27;2.64.0.0/11 on pe1 from 9.1.1.1&#x27;, &#x27;4.128.0.0/10 on pe1 from 9.1.1.1&#x27;]<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_customer_link_input_filter</td>
+          <td class="col-duration">1.85</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: List of customer connections with missing input filters</span><br/>    pe2[Ethernet1] connecting to IP:8.1.1.1 AS:608<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_manrs.py::test_customer_link_input_filter_anti_spoofing</td>
+          <td class="col-duration">2.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   AssertionError: List of customer connections with filters that do not prevent spoofing</span><br/>    ACL 101 on pe1[Ethernet1] connecting to {&#x27;Node&#x27;: &#x27;pe1&#x27;, &#x27;Remote_AS&#x27;: &#x27;609&#x27;, &#x27;Remote_IP&#x27;: &#x27;9.1.1.1&#x27;, &#x27;Allowed_Prefixes&#x27;: None, &#x27;Origin_Prefixes&#x27;: [&#x27;15.0.0.0/22&#x27;]} does not prevent spoofing<br/>    <br/>      Node Filter_Name                                  Flow  Action       Line_Content                             Trace<br/>    0  pe1  101         start=pe1 [15.0.0.0-&gt;0.0.0.0 HOPOPT]  PERMIT  permit ip any any  - Matched line permit ip any any<br/>    <br/>    No ACL applied to pe2[Ethernet1] connecting to {&#x27;Node&#x27;: &#x27;pe2&#x27;, &#x27;Remote_AS&#x27;: &#x27;608&#x27;, &#x27;Remote_IP&#x27;: &#x27;8.1.1.1&#x27;, &#x27;Allowed_Prefixes&#x27;: None, &#x27;Origin_Prefixes&#x27;: [&#x27;5.1.0.0/18&#x27;]}<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_audit.py::test_no_duplicate_ips</td>
+          <td class="col-duration">0.37</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_audit.py::test_no_forwarding_loops</td>
+          <td class="col-duration">4.29</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_manrs.py::test_customer_routes_have_communities</td>
+          <td class="col-duration">0.89</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_manrs.py::test_customer_bogon_routes</td>
+          <td class="col-duration">0.46</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_manrs.py::test_all_bgp_sessions_up</td>
+          <td class="col-duration">0.36</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
