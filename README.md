@@ -10,7 +10,6 @@ I highly recommend that you leverage a Python 3 virtual environment for installi
 ```
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
-python3 -m pip install --upgrade git+https://github.com/batfish/pybatfish.git
 ```
 
 ### Presentation
